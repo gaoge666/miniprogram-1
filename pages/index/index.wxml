@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" bindtap="toWelcome">{{motto}}</text>
+  </view>
+</view> -->
+<view class="container">
+
+	<image class="avatar" src="/images/ef9978f541e23dca04f5658150ac06e79877fc709b33-NlsaW7_fw658.jpg"></image>
+	<text class="motto">Hello,GoGe</text>
+	<view class="journey-container">
+		<text class="journey" bindtap="toWelcome">开启小程序之旅</text>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+ <text>介绍：</text>
+<view wx:for="{{twoList}}" wx:key="id">
+  <view>
+  {{index+1}}、{{item.name}}
+  </view>
+  <view wx:for="{{item.twodata}}" wx:for-item="twodata" wx:key="id">
+  ----------{{twodata.name}}--------------{{item.name}}
+  </view>
+</view>
+<image src="/images/ef9978f541e23dca04f5658150ac06e79877fc709b33-NlsaW7_fw658.jpg"></image>

@@ -1,0 +1,40 @@
+<view>
+	<swiper indicator-dots="true" autoplay="true" interval="2000" vertical="{{false}}" circular="true">
+		<swiper-item>
+			<image src="/images/post/2005691.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/post/2005692.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/post/2007033.jpg" mode="aspectFill"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/post/2005694.jpg" mode="aspectFill"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/post/2007035.jpg" mode="aspectFill"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="/images/post/2005696.jpg" mode="aspectFill"></image>
+		</swiper-item>
+	</swiper>
+	<view class="post-container" wx:for="{{postImg}}"  wx:key="{{index}}" >
+		<view class="post-author-date" >
+			<image src="{{item}}" mode="aspectFill" />
+			<text>{{date}}</text>
+		</view>
+		<text class="post-title">{{title}}</text>
+		<image class="post-image" src="{{item}}" mode="aspectFill"/>
+		<text class="post-content">{{content}}
+</text>
+		<view class="post-like">
+			<image src="/images/360wallpaper.jpg" />
+			<text>{{collectionNum}}</text>
+			<image src="/images/360wallpaper.jpg"></image>
+			<text>{{readingNum}}</text>
+			<image src="/images/360wallpaper.jpg"> </image>
+			<text>{{commentNum}}</text>
+		</view>
+	</view>
+</view>
